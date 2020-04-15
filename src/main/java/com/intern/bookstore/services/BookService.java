@@ -1,14 +1,10 @@
-package com.intern.bookstore.repositories;
+package com.intern.bookstore.services;
 
 import com.intern.bookstore.models.Book;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-
-@Repository
-public interface BookRepository {
-
+public interface BookService {
     public List<Book> findAll();
 
     public Book findById(int id);
@@ -16,6 +12,4 @@ public interface BookRepository {
     public void save(Book book);
 
     public void deleteById(int id);
-
-
 }
